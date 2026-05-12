@@ -1,5 +1,3 @@
-# singularity-bamtools
-
 ![Status](https://github.com/CBDatCMU/singularity-bamtools/actions/workflows/main.yml/badge.svg)
 ![Status](https://github.com/CBDatCMU/singularity-bamtools/actions/workflows/pretty.yml/badge.svg)
 ![Issue](https://img.shields.io/github/issues/CBDatCMU/singularity-bamtools)
