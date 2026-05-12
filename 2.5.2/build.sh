@@ -6,10 +6,11 @@
 IMAGE=singularity-bamtools-2.5.2.sif
 DEFINITION=Singularity
 
-singularity build --remote $IMAGE $DEFINITION
+sudo singularity build $IMAGE $DEFINITION
 
 if [ -f $IMAGE ]; then
 	exit 0
 else
 	exit 1
 fi
+
