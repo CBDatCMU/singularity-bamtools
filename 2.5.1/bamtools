@@ -3,7 +3,7 @@
 # 2024 Ray & Stephanie Lane Computational Biology Department.
 # All Rights Reserved.
 
-VERSION=2.5.2
+VERSION=2.5.1
 PACKAGE=bamtools
 TOOL=$PACKAGE
 DIRECTORY=$(dirname "$0")

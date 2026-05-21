@@ -3,7 +3,7 @@
 # Copyright © 2024 Ray & Stephanie Lane Computational Biology Department.
 # All Rights Reserved.
 
-IMAGE=singularity-bamtools-2.5.2.sif
+IMAGE=singularity-bamtools-2.5.1.sif
 DEFINITION=Singularity
 
 sudo singularity build $IMAGE $DEFINITION
