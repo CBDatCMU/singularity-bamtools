@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright © 2024 Ray & Stephanie Lane Computational Biology Department.
+# Copyright © 2026 Ray & Stephanie Lane Computational Biology Department.
 # All Rights Reserved.
 
 IMAGE=singularity-bamtools-2.5.1.sif

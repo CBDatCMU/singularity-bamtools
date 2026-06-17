@@ -1,11 +1,15 @@
 #!/bin/bash
 
-# 2024 Ray & Stephanie Lane Computational Biology Department.
+# 2026 Ray & Stephanie Lane Computational Biology Department.
 # All Rights Reserved.
 
 VERSION=2.5.1
 PACKAGE=bamtools
 TOOL=$PACKAGE
 DIRECTORY=$(dirname "$0")
+
+if [ -f /shared/containers/loader ]; then
+  source /shared/containers/loader
+fi
 
 singularity exec $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
