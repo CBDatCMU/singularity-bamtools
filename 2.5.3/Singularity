@@ -1,16 +1,15 @@
 Bootstrap: docker
-# Note: biocontainers does not publish a 2.5.1 tag; 2.5.1 is the closest available
-From: quay.io/biocontainers/bamtools:2.5.1--he513fc3_6
+From: quay.io/biocontainers/bamtools:2.5.3--he132191_0
 
 %labels
     AUTHOR icaoberg
     EMAIL icaoberg@andrew.cmu.edu
     WEBSITE http://github.com/CBDatCMU/singularity-bamtools
     COPYRIGHT Copyright © 2026 Computational Biology Department. All Rights Reserved.
-    VERSION 2.5.1
+    VERSION 2.5.3
 
 %help
-    This container provides bamtools 2.5.1, a toolkit for BAM file manipulation.
+    This container provides bamtools 2.5.3, a toolkit for BAM file manipulation.
 
     Usage:
         singularity exec image.sif bamtools <command> [options]
@@ -20,10 +19,6 @@ From: quay.io/biocontainers/bamtools:2.5.1--he513fc3_6
         singularity exec image.sif bamtools sort -in input.bam -out sorted.bam
 
     Run `singularity exec image.sif bamtools --help` for full command reference.
-
-%post
-    # Create /etc/resolv.conf if missing so Singularity can bind-mount host DNS config
-    [ -f /etc/resolv.conf ] || touch /etc/resolv.conf
 
 %runscript
     exec bamtools "$@"
